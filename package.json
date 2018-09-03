@@ -1,0 +1,22 @@
+{
+  "name": "rpn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ronald Dijks <ronalddijks@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "1.14.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.9",
+    "ts-extra-lib": "^0.0.8",
+    "ts-regex-tokenizer": "^0.0.1"
+  },
+  "scripts": {
+    "prettier:base": "prettier --parser typescript --single-quote --no-semi",
+    "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\""
+  }
+}
